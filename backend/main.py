@@ -7,6 +7,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.api.routes.v1 import router as v1_router
+from app.api.routes.ml import router as ml_router
+
+
 
 app = FastAPI(
     title="SmartCart API",
@@ -27,7 +30,7 @@ app.add_middleware(
 
 # Register routes
 app.include_router(v1_router, prefix=settings.API_V1_PREFIX)
-
+app.include_router(ml_router, prefix=settings.API_V1_PREFIX)
 
 @app.get("/", tags=["Root"])
 def root():
