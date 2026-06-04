@@ -33,3 +33,6 @@ frontend/dist/
 # OS
 .DS_Store
 Thumbs.db
+
+# ML models (too large for GitHub)
+backend/models/
