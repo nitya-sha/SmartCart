@@ -8,8 +8,8 @@ class Product(Base):
 
     product_id = Column(String(64), primary_key=True, index=True)
     product_category_name = Column(String(128), index=True)
-    product_name_length = Column(Integer)
-    product_description_length = Column(Integer)
+    product_name_lenght = Column(Integer)        # typo is in the original dataset
+    product_description_lenght = Column(Integer) # typo is in the original dataset
     product_photos_qty = Column(Integer)
     product_weight_g = Column(Float)
     product_length_cm = Column(Float)
