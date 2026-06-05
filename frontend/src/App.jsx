@@ -4,8 +4,7 @@ import {
   CartesianGrid, Tooltip, ResponsiveContainer, Cell
 } from "recharts";
 
-const API = "http://localhost:8000/api/v1";
-
+const API = "https://smartcart-4wlx.onrender.com/api/v1";
 const fmt = (n) => new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(n);
 const fmtR = (n) => `R$ ${fmt(n)}`;
 
